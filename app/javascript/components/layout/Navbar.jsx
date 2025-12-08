@@ -62,7 +62,7 @@ const Navbar = ({ user, handleLogout }) => {
   ];
 
   const browseLinks = [
-    { path: "/", label: "Years", icon: faCalendar },
+    { path: "/years", label: "Years", icon: faCalendar },
     { path: "/today", label: "Today", icon: faCalendarDay },
     { path: "/venues", label: "Venues", icon: faLandmark },
     { path: "/songs", label: "Songs", icon: faMicrophone },
