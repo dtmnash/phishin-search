@@ -4,6 +4,7 @@ import React from "react";
 import DraftPlaylist from "../DraftPlaylist";
 import DynamicRoute, { dynamicLoader } from "../routes/DynamicRoute";
 import Eras, { erasLoader } from '../Eras';
+import HomeSearch from "../HomeSearch";
 import Layout from "../layout/Layout";
 import MapSearch from "../MapSearch";
 import MissingContentReport, { missingContentLoader } from "../MissingContentReport";
@@ -46,6 +47,10 @@ const routes = (props) => [
     children: [
       {
         path: "/",
+        element: <HomeSearch />,
+      },
+      {
+        path: "/years",
         element: <Eras />,
         loader: erasLoader,
       },
